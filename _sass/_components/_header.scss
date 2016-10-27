@@ -1,0 +1,56 @@
+header {
+  background-color: color(yellow);
+  text-align: center;
+  padding-top: 40px;
+  .title {
+    color: color(purple) !important;
+    font-weight: bold;
+    a {
+      color: color(purple);
+    }
+  }
+  &::after {
+    margin-top: 40px;
+    display: block;
+    content: '';
+    width: 100vw;
+    background: url('../img/wave.svg') no-repeat bottom center #fff;
+    background-size: cover;
+    padding-bottom: 8%;
+  }
+
+  .navigation {
+    width: 1000px;
+    margin: 0 auto;
+    .menu {
+      text-align: center;
+      margin-top: 25px;
+      li {
+        display: inline-block;
+        font-size: 18px;
+        margin: 0 10px;
+        a {
+          color: darken(color(yellow),30%);
+        }
+        &.🐝 a,
+        &:hover a,
+        &:active a {
+          color: color(purple);
+        }
+      }
+    }
+  }
+}
+
+footer {
+  .menu {
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    li {
+      display: inline-block;
+      font-size: 18px;
+      margin: 0 10px;
+    }
+  }
+}

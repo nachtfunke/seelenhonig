@@ -1,0 +1,17 @@
+<footer>
+  <h1 class="footer-title"><a href="{{ site.baseurl }}/">Seelenhonig</a></h1>
+  <nav class="navigation_footer">
+    <ul class="menu">
+      {% for my_page in site.pages %}
+        {% if my_page.title %}
+          {% if page.url == my_page.url %}
+            <li class="🐝"><a href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a></li>
+          {% else %}
+            <li><a href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a></li>
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </nav>
+  <small>&copy; 2017 Seelenhonig e.U.</small>
+</footer>

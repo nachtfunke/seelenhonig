@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+  <body>
+    {% include header.html %}
+    <main>
+      <aside class="zitate">
+        <blockquote class="zitat">
+          <p>“Wir bei Seelenhonig kümmern uns um ihre Leiden. Lehnen Sie sich zurück und genießen Sie einen Moment der Tiefenentspannung.”</p>
+          <cite>Meditationslehrer,<br> Nocturna Schlafnetein</cite>
+        </blockquote>
+        <blockquote class="zitat">
+          <p>“Gesundheit beginnt im Herzen und strahlt nach Außen. Wir helfen Ihnen, ihr Inneres zu heilen, sodass Ihr Körper mit neuer Gesundheit erblüht.”</p>
+          <cite>Yoga Lehrer,<br> Ben Bending</cite>
+        </blockquote>
+      </aside>
+      <section class="content">
+        {{ content }}
+      </section>
+      <div class="clear"></div>
+    </main>
+    {% include footer.html %}
+  </body>
+</html>

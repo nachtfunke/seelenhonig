@@ -1,0 +1,103 @@
+@import '../node_modules/susy/sass/susy';
+
+
+@import '_settings/settings';
+@import '_tools/tools';
+
+@import '_components/header';
+
+html {
+  color: color(dark);
+  font-family: 'Karla', sans-serif;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+a {
+  color: color(blue);
+  text-decoration: inherit;
+}
+
+.🐝 {
+  background-color: transparent;
+}
+
+main {
+  margin: 0 auto;
+  width: 1000px;
+  min-height: 60vh;
+  padding: 75px 0;
+}
+p {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 1em;
+}
+.zitate {
+  //@include span(5 of 12);
+  width: 406px;
+  float: left;
+  .zitat {
+    font-family: 'Lora';
+    font-style: italic;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 40px;
+    &::after {
+      content: '';
+      display: table;
+      clear: both;
+    }
+    p {
+      float: right;
+      font-size: 20px;
+      width: 85%;
+      margin-bottom: 0;
+    }
+    cite {
+      float: left;
+      writing-mode: vertical-rl;
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-style: normal;
+      line-height: normal;
+      font-family: 'Karla';
+      color: color(purple);
+    }
+  }
+}
+
+.content {
+  //@include span(last 7 of 12);
+  width: 576px;
+  float: right;
+  h1 {
+    font-size: 29px;
+    color: color(purple);
+    font-weight: normal;
+    margin-bottom: 40px;
+  }
+}
+
+.clear {
+  clear: both;
+}
+
+footer {
+  $light-grey: #FBFBFB;
+  background-color: $light-grey;
+  color: darken($light-grey, 15%);
+  padding: 48px 0;
+  text-align: center;
+  a {
+    color: inherit;
+  }
+}
+
+.page-content {
+  width: 800px;
+  margin: 0 auto;
+}
